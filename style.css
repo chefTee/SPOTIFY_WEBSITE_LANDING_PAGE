@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    width: 100%;
+    color: #ffffff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1.5rem;
+}
+.nav-area-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spotify-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.spotify-logo i{
+    color: #ffffff;
+    font-size: 40px;
+    margin-right: 2rem;
+    height: 40px;
+}
+.home-icon{
+    position: relative;
+    background: #232222;
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.home-icon:hover{
+    transform: scale(1.1);
+}
+.home-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: hsl(0, 1%, 79%);
+}
+.search-bar{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #232222;
+    border-radius: 9999px;
+    width: 470px;
+    transition: background 0.25s;
+}
+.search-bar:hover{
+    background: #333333;
+    box-shadow: 0 0 2px hsl(0, 1%, 79%);
+}
+.search-bar:hover.search-bar i{
+    color: #ffffff;
+}
+.search-bar:focus-within{
+    border: 2px solid #ffff;
+}
+.search-input{
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-right: 1px solid hsl(0, 1%, 79%);
+    outline: none;
+    margin-left: 14px;
+    border-right: 1px solid;
+    background: transparent;
+    flex: 1;  
+    cursor: pointer; 
+}
+.search-input::placeholder,
+.search-bar i{
+    font-size: 18px;
+    color: hsl(0, 1%, 79%);
+}
+.nav-area-2{
+    display: flex;
+    align-items: center;
+    margin-right: -1rem;
+}
+.sub-options{
+    background: #ffffff;
+    color: black;
+    border-radius: 9999px;
+    padding: 5px 1rem;
+    font-weight: bold;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.sub-options:hover{
+    transform: scale(1.1);
+    background: hsl(0, 1%, 79%);
+}
+.download-app{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.download-app:hover{
+    transform: scale(1.1);
+}
+.download-app i{
+    color: #ffffff;
+    margin-right: 5px;
+}
+.notification-bell{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.notification-bell i{
+    position: relative;
+    color: hsl(0, 1%, 79%);;
+}
+.notification-bell i:hover{
+    color: #ffffff;
+}
+.notification-bell i:hover::after{
+    position: absolute;
+    content: "What's New";
+    font-size: 10px;
+    font-weight: 200;
+    color: #ffffff;
+    top: 2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232222;
+    padding: 10px;
+    flex-wrap: nowrap;
+    word-spacing: 2px;
+    text-transform: lowercase;
+    border-radius: 5px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: #232222;
+    cursor: pointer;
+    margin-right: -10%;
+}
+.profile:hover{
+    transform: scale(1.05);
+}
+.profile h4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background: #ce5b9e;
+    cursor: pointer;
+}
+.profile h4:hover::after{
+    position: absolute;
+    content: "Taiwosharon";
+    top: 3rem;
+    right: 0;
+    background: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
